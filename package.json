@@ -1,8 +1,8 @@
 {
-  "name": "washology",
+  "name": "inspector-wiz",
   "version": "1.0.0",
   "private": true,
-  "description": "Node.js app serving static Washology site via Express routes",
+  "description": "Node.js app serving the Inspector Wiz site via Express routes",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
