@@ -1,9 +1,14 @@
-/* Brand color overrides: Swim Studs-inspired palette */
+/* Brand color overrides: Inspector Wiz palette */
 :root {
-  --brand-yellow: #F9EE28; /* bright lemon */
-  --brand-red: #EE3D23;    /* vivid red-orange */
-  --brand-orange: #F7A11A; /* warm orange accent */
-  --brand-dark: #1B1B1B;   /* dark text fallback */
+  /* Core IW colors */
+  --brand-blue: #0B5E8E;   /* deep blue from logo */
+  --brand-lime: #F9EE28;   /* logo yellow (warmer) */
+  --brand-lime-rgb: 249, 238, 40; /* logo yellow as RGB for rgba() */
+  /* Map legacy tokens to IW palette */
+  --brand-yellow: var(--brand-lime);
+  --brand-red: var(--brand-blue);
+  --brand-orange: var(--brand-lime);
+  --brand-dark: #052B44;   /* dark navy text fallback */
 }
 
   
@@ -15,8 +20,8 @@
   color: #fff !important;
 }
 .btn-primary:hover, .button:hover, .wp-block-button__link:hover, .btn.btn-primary:hover {
-  background-color: #d7341b !important;
-  border-color: #d7341b !important;
+  background-color: #063e61 !important;
+  border-color: #063e61 !important;
 }
 .btn-outline-primary {
   color: var(--brand-red) !important;
@@ -30,7 +35,7 @@
 /* Navbar */
 #header.navbar {
   background-color: var(--brand-yellow) !important;
-  border-bottom: 2px solid var(--brand-orange);
+  border-bottom: 2px solid var(--brand-blue);
 }
 
 /* Badges, accents */
@@ -38,11 +43,6 @@
 .text-primary { color: var(--brand-red) !important; }
 .border-primary { border-color: var(--brand-red) !important; }
 
-/* Footer */
-#footer, .site-footer {
-  background-color: var(--brand-yellow) !important;
-  color: var(--brand-dark) !important;
-}
 #footer a, .site-footer a { color: var(--brand-red) !important; }
 
 /* Dropdown menus: Washology lime background with blue text */
@@ -82,23 +82,28 @@
 }
 
 /* Section overlay adjustments */
-/* Switch overlay-jade to a Swim Studs red overlay */
+/* Switch overlay-jade to IW palette */
 section.overlay-jade {
   /* drive internal accents toward red */
   --garageup-accent-color: var(--brand-red);
 }
 section.overlay-jade:before {
   /* override the jade/blue background color applied in main.css */
-  background-color: rgba(249, 238, 40, 0.5) !important; /* #F9EE28 at 50% */
+  background-color: rgba(var(--brand-lime-rgb), 0.5) !important; /* semi-transparent IW yellow */
 }
 
 /* Top CTA banner */
 .banner-wrapper a {
-  color: white !important;
-  border-bottom-color: var(--brand-red) !important;
+  background: transparent !important;
+  color: var(--brand-lime) !important;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 0 !important;
+  text-decoration: none !important;
 }
 .banner-wrapper a:hover {
-  border-color: transparent !important;
+  filter: brightness(1.05);
 }
 
 /* Get Started section overrides */
@@ -135,8 +140,9 @@ section.overlay-jade:before {
 .get-started .btn-primary:focus,
 .get-started .btn-primary-dark:hover,
 .get-started .btn-primary-dark:focus {
-  background-color: #e79112 !important; /* slightly darker orange */
-  border-color: #e79112 !important;
+  /* darken IW yellow slightly on hover */
+  background-color: color-mix(in srgb, var(--brand-lime) 85%, #000 15%) !important;
+  border-color: color-mix(in srgb, var(--brand-lime) 85%, #000 15%) !important;
   color: #fff !important;
 }
 
@@ -151,21 +157,15 @@ section.overlay-jade:before {
 .who-we-are .btn.btn-primary-dark:focus,
 .who-we-are a.btn.btn-primary-dark:hover,
 .who-we-are a.btn.btn-primary-dark:focus {
-  background-color: #e79112 !important; /* slightly darker orange */
-  border-color: #e79112 !important;
+  background-color: color-mix(in srgb, var(--brand-lime) 85%, #000 15%) !important;
+  border-color: color-mix(in srgb, var(--brand-lime) 85%, #000 15%) !important;
   color: #fff !important;
 }
 
-/* Footer social icons: make white SVGs render as brand orange */
-.footer .social-icons-wrapper img {
-  /* approximate #F7A11A */
-  filter: invert(69%) sepia(71%) saturate(743%) hue-rotate(352deg) brightness(101%) contrast(101%);
-}
+/* Footer social icons: disable legacy orange filter (we use custom mask in footer.ejs) */
+.footer .social-icons-wrapper img { filter: none !important; }
 .footer .social-icons-wrapper a:hover img,
-.footer .social-icons-wrapper a:focus img {
-  /* slightly stronger on hover */
-  filter: invert(71%) sepia(83%) saturate(902%) hue-rotate(349deg) brightness(101%) contrast(105%);
-}
+.footer .social-icons-wrapper a:focus img { filter: none !important; }
 
 /* Reviews section overrides */
 .reviews .resi-review--stars svg path,
@@ -288,12 +288,7 @@ section.blogFeat h4 {
   filter: brightness(1.05);
 }
 
-.our-stats .our-stats--stat--icon img {
-  /* approximate #F7A11A */
-  filter: invert(69%) sepia(71%) saturate(743%) hue-rotate(352deg) brightness(101%) contrast(101%);
-}
+.our-stats .our-stats--stat--icon img { filter: none !important; }
 /* Slight emphasis on hover/focus */
 .our-stats .our-stats--stat:hover .our-stats--stat--icon img,
-.our-stats .our-stats--stat:focus-within .our-stats--stat--icon img {
-  filter: invert(71%) sepia(83%) saturate(902%) hue-rotate(349deg) brightness(101%) contrast(105%);
-}
+.our-stats .our-stats--stat:focus-within .our-stats--stat--icon img { filter: none !important; }
