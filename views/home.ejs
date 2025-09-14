@@ -1,6 +1,6 @@
 <%- include('partials/header') %>
 
-<section class="hero hero-wrapper overlay-jade hero-aesthetic" data-hero-bg="<%= (homepage && homepage.heroBg) || '/pictures/Inspector-Wiz/2.png' %>" style="background-image: url(&quot;<%= (homepage && homepage.heroBg) || '/pictures/Inspector-Wiz/2.png' %>&quot;); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+<section class="hero hero-wrapper overlay-jade hero-aesthetic" data-hero-bg="<%= (homepage && homepage.heroBg) || '/pictures/garage-gators/2.png' %>" style="background-image: url(&quot;<%= (homepage && homepage.heroBg) || '/pictures/garage-gators/2.png' %>&quot;); background-repeat: no-repeat; background-size: cover; background-position: center center;">
   <div class="hero-overlay" aria-hidden="true"></div>
 
   <div class="content-wrapper container position-relative">
@@ -1060,7 +1060,7 @@
 		<div class="row align-items-center gap-4 gap-lg-0">
 			<div class="col-sm-12 col-lg-6 position-relative">
 				<div class="image-container">
-					<img width="750" height="600" src="<%= (homepage && homepage.whoWeAreImage) || '/pictures/Inspector-Wiz/3.png' %>" class="img-fluid main-image" alt="Garage Gators technician at work" decoding="async" fetchpriority="high" />
+					<img width="750" height="600" src="<%= (homepage && homepage.whoWeAreImage) || '/pictures/garage-gators/3.png' %>" class="img-fluid main-image" alt="Garage Gators technician at work" decoding="async" fetchpriority="high" />
 					
 					<!-- Testimonial overlay card -->
 					<div class="testimonial-card">
@@ -1325,7 +1325,7 @@
       %>
         <% const sTitle = (homepage && homepage[`featuredService${i}Title`]) || _defaults[i-1].title; %>
         <% const sUrl = '/'; %>
-        <% const sImg = (homepage && homepage[`featuredService${i}Image`]) || ((i % 2 === 0) ? '/pictures/Inspector-Wiz/3.png' : '/pictures/Inspector-Wiz/2.png'); %>
+        <% const sImg = (homepage && homepage[`featuredService${i}Image`]) || ((i % 2 === 0) ? '/pictures/garage-gators/3.png' : '/pictures/garage-gators/2.png'); %>
         <a class="service-card-new" href="<%= sUrl %>">
           <div class="service-image">
             <img src="<%= sImg %>" alt="<%= sTitle %>" class="img-fluid">
@@ -1354,18 +1354,14 @@
   .our-stats .our-stats--stat p {
     color: var(--brand-red) !important;
   }
-  /* Recolor emoji SVGs to Garage Gators green within Quick Facts */
+  /* Quick Facts icons: use source color (now forced to green via Iconify URLs) */
   .our-stats .our-stats--stat--icon img {
-    /* Approximate #1E7A3A (gator green) via CSS filter */
-    filter: invert(30%) sepia(22%) saturate(1450%) hue-rotate(84deg) brightness(95%) contrast(95%) !important;
+    filter: none !important;
     transform: scale(1.18);
     transform-origin: center center;
     transition: none !important;
   }
-  /* Lock the same green on hover to prevent theme overrides */
-  .our-stats .our-stats--stat:hover .our-stats--stat--icon img {
-    filter: invert(30%) sepia(22%) saturate(1450%) hue-rotate(84deg) brightness(95%) contrast(95%) !important;
-  }
+  .our-stats .our-stats--stat:hover .our-stats--stat--icon img { filter: none !important; }
   .our-stats .our-stats--stat--icon { display: inline-flex; align-items: center; justify-content: center; }
   /* Who We Are typography */
   .who-we-are .who-we-are--copy p { margin-bottom: 1.2rem; font-weight: 400; }
