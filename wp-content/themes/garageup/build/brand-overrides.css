@@ -1,14 +1,14 @@
-/* Brand color overrides: Garage Gators palette */
+/* Brand color overrides: Pest Mavericks palette */
 :root {
-  /* Core Garage Gators colors */
-  --brand-blue: #1E7A3A;   /* mapped to primary: deep gator green */
-  --brand-lime: #F4D21F;   /* mapped to secondary: logo yellow */
-  --brand-lime-rgb: 244, 210, 31; /* logo yellow as RGB for rgba() */
+  /* Core Pest Mavericks colors */
+  --brand-blue: #0B1F2C;   /* primary: dark navy */
+  --brand-lime: #D62828;   /* secondary: bold red */
+  --brand-lime-rgb: 214, 40, 40; /* red as RGB for rgba() */
   /* Map legacy tokens to new palette */
   --brand-yellow: var(--brand-lime);
-  --brand-red: var(--brand-blue);
-  --brand-orange: var(--brand-lime);
-  --brand-dark: #0E3D1F;   /* deep green for dark text accents */
+  --brand-red: var(--brand-lime);
+  --brand-orange: #7FB3D5; /* light ice blue accent */
+  --brand-dark: #08151E;   /* deeper navy for dark text accents */
 }
 
   
@@ -20,8 +20,8 @@
   color: #fff !important;
 }
 .btn-primary:hover, .button:hover, .wp-block-button__link:hover, .btn.btn-primary:hover {
-  background-color: #145E2A !important; /* darker gator green */
-  border-color: #145E2A !important;
+  background-color: #a32020 !important; /* darker red */
+  border-color: #a32020 !important;
 }
 .btn-outline-primary {
   color: var(--brand-red) !important;
@@ -34,8 +34,8 @@
 
 /* Navbar */
 #header.navbar {
-  background-color: var(--brand-yellow) !important;
-  border-bottom: 2px solid var(--brand-blue);
+  background-color: var(--brand-blue) !important;
+  border-bottom: 2px solid var(--brand-red);
 }
 
 /* Badges, accents */

@@ -6,31 +6,34 @@
 	<style>
 		/* Brand palette */
 		:root {
-			--brand-blue: #1E7A3A;   /* primary: gator green */
-			--brand-lime: #F4D21F;   /* secondary: logo yellow */
+			/* Pest Mavericks brand */
+			--brand-navy: #0B1F2C;   /* primary dark navy from logo outline */
+			--brand-red: #D62828;    /* accent red from logo stripes */
+			--brand-cream: #F1F2EE;  /* off-white text fill */
+			--brand-ice: #7FB3D5;    /* optional light blue trim */
 			/* Map legacy tokens used across templates */
-			--brand-red: var(--brand-blue);
-			--brand-yellow: var(--brand-lime);
+			--brand-blue: var(--brand-navy);
+			--brand-lime: var(--brand-red);
 		}
 		img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }
 	</style>
-	<title>Garage Gators | Home Services | Garage Repair</title>
-	<meta name="description" content="Home services and garage repair. Fast, professional service. Free estimates." />
+	<title>Pest Mavericks | Pest control company for houses</title>
+	<meta name="description" content="Professional home pest control—inspection, treatment, and prevention for houses. Fast service. Free estimates." />
 	<link rel="canonical" href="/" />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Garage Gators | Home Services | Garage Repair" />
-	<meta property="og:description" content="Home services and garage repair. Fast, professional service. Free estimates." />
-	<meta property="og:site_name" content="Garage Gators" />
+	<meta property="og:title" content="Pest Mavericks | Pest control company for houses" />
+	<meta property="og:description" content="Professional home pest control—inspection, treatment, and prevention for houses. Free estimates." />
+	<meta property="og:site_name" content="Pest Mavericks" />
 	<meta property="og:image:width" content="800" />
 	<meta property="og:image:height" content="527" />
-	<meta property="og:image:alt" content="Garage Gators project including new storage units, lighting, and epoxy flooring" />
+	<meta property="og:image:alt" content="Pest Mavericks residential pest control service" />
 	<meta property="og:image:type" content="image/png" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Garage Gators | Home Services | Garage Repair" />
-	<meta name="twitter:description" content="Home services and garage repair. Fast, professional service. Free estimates." />
-	<link rel="alternate" type="application/rss+xml" title="Garage Gators » Feed" href="/feed/" />
-	<link rel="alternate" type="application/rss+xml" title="Garage Gators » Comments Feed" href="/comments/feed/" />
+	<meta name="twitter:title" content="Pest Mavericks | Pest control company for houses" />
+	<meta name="twitter:description" content="Professional home pest control—inspection, treatment, and prevention. Free estimates." />
+	<link rel="alternate" type="application/rss+xml" title="Pest Mavericks » Feed" href="/feed/" />
+	<link rel="alternate" type="application/rss+xml" title="Pest Mavericks » Comments Feed" href="/comments/feed/" />
 	<style id='wp-emoji-styles-inline-css'>
 		img.wp-smiley, img.emoji { display: inline !important; border: none !important; box-shadow: none !important; height: 1em !important; width: 1em !important; margin: 0 0.07em !important; vertical-align: -0.1em !important; background: none !important; padding: 0 !important; }
 	</style>
@@ -39,30 +42,36 @@
 	<style id='safe-svg-svg-icon-style-inline-css'>.safe-svg-cover{text-align:center}.safe-svg-cover .safe-svg-inside{display:inline-block;max-width:100%}.safe-svg-cover svg{height:100%;max-height:100%;max-width:100%;width:100%}</style>
 	<link rel='stylesheet' id='main-css' href='/wp-content/themes/garageup/build/main.css_ver=b6dc510ac89b6f088fb6.css' media='all' />
 	<link rel='stylesheet' id='nav-overrides-css' href='/wp-content/themes/garageup/build/nav-overrides.css' media='all' />
-	<link rel='stylesheet' id='brand-overrides-css' href='/wp-content/themes/garageup/build/brand-overrides.css?v=20250915-gg' media='all' />
+	<link rel='stylesheet' id='brand-overrides-css' href='/wp-content/themes/garageup/build/brand-overrides.css?v=20250915-pm' media='all' />
 	<!-- Late brand override to ensure palette wins over bundled CSS -->
 	<style>
 		:root { 
-			--brand-blue: #1E7A3A !important;  /* gator green */
-			--brand-lime: #F4D21F !important;  /* logo yellow */
-			--brand-red: var(--brand-blue) !important; 
-			--brand-yellow: var(--brand-lime) !important; 
+			/* enforce new palette */
+			--brand-navy: #0B1F2C !important;
+			--brand-red: #D62828 !important;
+			--brand-cream: #F1F2EE !important;
+			--brand-ice: #7FB3D5 !important;
+			--brand-blue: var(--brand-navy) !important; 
+			--brand-lime: var(--brand-red) !important; 
+			--brand-yellow: var(--brand-red) !important; 
 		}
-		/* Header banner and navbar */
-		.banner-wrapper { background-color: var(--brand-blue) !important; }
-		#header.navbar { background-color: var(--brand-lime) !important; border-bottom: 3px solid var(--brand-blue) !important; }
-		#header .nav-link { color: var(--brand-blue) !important; }
-		#header .nav-link:hover { color: #145E2A !important; }
-		#header .dropdown-item:hover { background: var(--brand-lime) !important; color: #0E3D1F !important; }
+		/* Header banner and navbar (Pest Mavericks) */
+		.banner-wrapper { background-color: var(--brand-red) !important; }
+		#header.navbar { background-color: var(--brand-blue) !important; border-bottom: 3px solid var(--brand-red) !important; }
+		#header .nav-link { color: var(--brand-cream) !important; }
+		#header .nav-link:hover { color: var(--brand-red) !important; }
+		#header .dropdown-menu { background: #0f2736; border-color: rgba(12,28,40,.6); }
+		#header .dropdown-item { color: var(--brand-cream); }
+		#header .dropdown-item:hover { background: var(--brand-red) !important; color: #fff !important; }
 
 		/* Global component overrides */
-		.btn-primary, .btn-brand-primary { background-color: var(--brand-blue) !important; border-color: var(--brand-blue) !important; color: #fff !important; }
+		.btn-primary, .btn-brand-primary { background-color: var(--brand-red) !important; border-color: var(--brand-red) !important; color: #fff !important; }
 		.btn-outline-secondary { border-color: var(--brand-blue) !important; color: var(--brand-blue) !important; }
-		.btn-outline-secondary:hover { background: var(--brand-lime) !important; border-color: var(--brand-lime) !important; color: #0E3D1F !important; }
-		.badge, .label { background: var(--brand-lime) !important; color: #0E3D1F !important; }
+		.btn-outline-secondary:hover { background: var(--brand-blue) !important; border-color: var(--brand-blue) !important; color: var(--brand-cream) !important; }
+		.badge, .label { background: var(--brand-red) !important; color: #fff !important; }
 		.bg-warning, .bg-danger, .bg-primary { background-color: var(--brand-blue) !important; }
-		.text-danger, .text-primary { color: var(--brand-blue) !important; }
-		.border-primary { border-color: var(--brand-lime) !important; }
+		.text-danger, .text-primary { color: var(--brand-red) !important; }
+		.border-primary { border-color: var(--brand-red) !important; }
 	</style>
 	<script src="/wp-includes/js/jquery/jquery.min.js_ver=3.7.1" id="jquery-core-js"></script>
 	<script src="/wp-includes/js/jquery/jquery-migrate.min.js_ver=3.4.1" id="jquery-migrate-js"></script>
@@ -70,10 +79,10 @@
 	<link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/pages/8" />
 	<link rel='shortlink' href='/' />
 	
-	<link rel="icon" href="/pictures/favicon/garage-gators/favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" href="/pictures/favicon/garage-gators/favicon-192x192.png" sizes="192x192" />
-	<link rel="apple-touch-icon" href="/pictures/favicon/garage-gators/favicon-192x192.png" />
-	<meta name="msapplication-TileImage" content="/pictures/favicon/garage-gators/favicon-192x192.png" />
+	<link rel="icon" href="/pictures/favicon/pest-mavericks/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" href="/pictures/favicon/pest-mavericks/android-chrome-192x192.png" sizes="192x192" />
+	<link rel="apple-touch-icon" href="/pictures/favicon/pest-mavericks/android-chrome-192x192.png" />
+	<meta name="msapplication-TileImage" content="/pictures/favicon/pest-mavericks/favicon-192x192.png" />
 	<style>
 		/* Global top banner styles */
 		.banner-wrapper { background-color: var(--brand-red); }
@@ -87,7 +96,7 @@
 		}
 		.banner-wrapper .banner-header a { 
 			background: transparent;
-			color: var(--brand-lime) !important; 
+			color: #ffffff !important; 
 			text-decoration: none; 
 			display: inline-block; 
 			padding: 4px 10px;
@@ -107,26 +116,26 @@
 		}
 
 		/* Brand theming for navbar */
-		#header.navbar { background-color: var(--brand-lime) !important; border-bottom: 3px solid var(--brand-blue) !important; }
-		#header .nav-link { color: var(--brand-blue) !important; font-weight: 600; }
-		#header .nav-link:hover, #header .nav-link:focus { color: #145E2A !important; }
-		#header .dropdown-menu { border-radius: 10px; border-color: rgba(11,94,142,.15); }
-		#header .dropdown-item:hover, #header .dropdown-item:focus { background: var(--brand-yellow); color: #0E3D1F; }
+		#header.navbar { background-color: var(--brand-blue) !important; border-bottom: 3px solid var(--brand-red) !important; }
+		#header .nav-link { color: var(--brand-cream) !important; font-weight: 600; }
+		#header .nav-link:hover, #header .nav-link:focus { color: var(--brand-red) !important; }
+		#header .dropdown-menu { border-radius: 10px; border-color: rgba(12,28,40,.35); background-color: #0f2736; }
+		#header .dropdown-item:hover, #header .dropdown-item:focus { background: var(--brand-red); color: #fff; }
 
 		/* Primary buttons in header context */
 		.btn.btn-brand-primary { background-color: var(--brand-red) !important; border-color: var(--brand-red) !important; color: #fff; }
-		.btn.btn-brand-primary:hover { filter: brightness(1.05); box-shadow: 0 6px 16px rgba(11,94,142,.28); }
+		.btn.btn-brand-primary:hover { filter: brightness(1.05); box-shadow: 0 6px 16px rgba(12,28,40,.28); }
 
 		/* Site loader overlay */
-		#site-loader { position: fixed; inset: 0; background: var(--brand-yellow); display: flex; align-items: center; justify-content: center; z-index: 9999; transition: opacity .3s ease, visibility .3s ease; }
-		#site-loader img { width: 170px; height: auto; filter: drop-shadow(0 2px 6px rgba(0,0,0,.15)); }
+		#site-loader { position: fixed; inset: 0; background: var(--brand-blue); display: flex; align-items: center; justify-content: center; z-index: 9999; transition: opacity .3s ease, visibility .3s ease; }
+		#site-loader img { width: 170px; height: auto; filter: drop-shadow(0 2px 6px rgba(0,0,0,.35)); }
 		#site-loader.hidden { opacity: 0; visibility: hidden; }
 	</style>    
 </head>
 <body class="<%= typeof bodyClass !== 'undefined' && bodyClass ? bodyClass : 'home wp-singular page-template page-template-templates page-template-landing page-template-templateslanding-php page page-id-8 wp-theme-resi-franchise wp-child-theme-garageup' %>">
 	<!-- Site Loader -->
 	<div id="site-loader" aria-hidden="true" role="presentation">
-		<img src="/pictures/logo/Transparent Gator.png" alt="Garage Gators" />
+		<img src="/pictures/logo/Pest Mavericks Transparent.png" alt="Pest Mavericks" />
 	</div>
 	<script>
 		window.addEventListener('load', function () {
@@ -268,8 +277,8 @@
 			<nav id="header" class="navbar navbar-expand-md justify-content-center navbar-light">
 				<div class="container">
 					<div class="mbl-nav-wrapper">
-						<a class="navbar-brand d-md-none" href="/" title="Garage Gators" rel="home">
-							<img src="/pictures/logo/Transparent Gator.png" alt="Garage Gators" />
+						<a class="navbar-brand d-md-none" href="/" title="Pest Mavericks" rel="home">
+							<img src="/pictures/logo/Pest Mavericks Transparent.png" alt="Pest Mavericks" />
 						</a>
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
@@ -282,8 +291,8 @@
 								<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item"><a title="Contact Us" href="/contact-us" class="nav-link">Contact Us</a></li>
 							</ul>
 							<li class="center-brand d-none d-md-flex">
-								<a class="navbar-brand" href="/" title="Garage Gators" rel="home">
-									<img src="/pictures/logo/Transparent Gator.png" alt="Garage Gators" />
+								<a class="navbar-brand" href="/" title="Pest Mavericks" rel="home">
+									<img src="/pictures/logo/Pest Mavericks Transparent.png" alt="Pest Mavericks" />
 								</a>
 							</li>
 							<ul id="menu-main-menu-1" class="navbar-nav right-menu">
