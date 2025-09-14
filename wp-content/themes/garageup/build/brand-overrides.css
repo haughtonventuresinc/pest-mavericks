@@ -1,14 +1,14 @@
-/* Brand color overrides: Inspector Wiz palette */
+/* Brand color overrides: Garage Gators palette */
 :root {
-  /* Core IW colors */
-  --brand-blue: #0B5E8E;   /* deep blue from logo */
-  --brand-lime: #F9EE28;   /* logo yellow (warmer) */
-  --brand-lime-rgb: 249, 238, 40; /* logo yellow as RGB for rgba() */
-  /* Map legacy tokens to IW palette */
+  /* Core Garage Gators colors */
+  --brand-blue: #1E7A3A;   /* mapped to primary: deep gator green */
+  --brand-lime: #F4D21F;   /* mapped to secondary: logo yellow */
+  --brand-lime-rgb: 244, 210, 31; /* logo yellow as RGB for rgba() */
+  /* Map legacy tokens to new palette */
   --brand-yellow: var(--brand-lime);
   --brand-red: var(--brand-blue);
   --brand-orange: var(--brand-lime);
-  --brand-dark: #052B44;   /* dark navy text fallback */
+  --brand-dark: #0E3D1F;   /* deep green for dark text accents */
 }
 
   
@@ -20,8 +20,8 @@
   color: #fff !important;
 }
 .btn-primary:hover, .button:hover, .wp-block-button__link:hover, .btn.btn-primary:hover {
-  background-color: #063e61 !important;
-  border-color: #063e61 !important;
+  background-color: #145E2A !important; /* darker gator green */
+  border-color: #145E2A !important;
 }
 .btn-outline-primary {
   color: var(--brand-red) !important;
@@ -63,7 +63,7 @@
 .dropdown-menu .dropdown-item:focus,
 .navbar .dropdown-menu .dropdown-item:hover,
 .navbar .dropdown-menu .dropdown-item:focus {
-  color: #fff !important; /* white text on blue */
+  color: #fff !important; /* white text on green */
   background-color: var(--brand-blue) !important;
 }
 .dropdown-menu .dropdown-item.active,
@@ -140,7 +140,7 @@ section.overlay-jade:before {
 .get-started .btn-primary:focus,
 .get-started .btn-primary-dark:hover,
 .get-started .btn-primary-dark:focus {
-  /* darken IW yellow slightly on hover */
+  /* darken logo yellow slightly on hover */
   background-color: color-mix(in srgb, var(--brand-lime) 85%, #000 15%) !important;
   border-color: color-mix(in srgb, var(--brand-lime) 85%, #000 15%) !important;
   color: #fff !important;

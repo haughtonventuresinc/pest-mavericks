@@ -1,9 +1,9 @@
 {
   "heroTitle": "Home Services",
-  "heroSubtitle": "Home Inspection & Appraisals",
+  "heroSubtitle": "Garage Repair",
   "heroBg": "/pictures/Inspector-Wiz/2.png",
   "whoWeAreTitle": "Who We Are",
-  "whoWeAreBody": "Inspector Wiz provides reliable home inspections and appraisal support. From pre‑purchase and pre‑listing inspections to 4‑point, wind mitigation, and commercial property assessments, our trained pros deliver clear reports and on‑time service.\n\nWe’re rooted in consistency, transparency, and great results. Expect on‑site professionalism, clear communication, photo‑rich reports, and guidance you can trust.",
+  "whoWeAreBody": "Garage Gators provides reliable home services with a focus on garage repair and upgrades. Our trained pros deliver clear communication, dependable results, and on‑time service—every visit.",
   "ctaLabel": "Get Free Estimate",
   "ctaUrl": "/contact-us",
   "scrollerText": "BUYER’S INSPECTION • PRE‑LISTING • 4‑POINT • WIND MITIGATION • COMMERCIAL • APPRAISAL SUPPORT",
@@ -34,9 +34,9 @@
   "quickEstimatesIcon": "https://api.iconify.design/twemoji/telephone-receiver.svg",
   "quickPossibilitiesIcon": "https://api.iconify.design/twemoji/water-wave.svg",
   "blogKicker": "HOME TIPS & GUIDES",
-  "blogTitle": "INSPECTION INSIGHTS",
+  "blogTitle": "GARAGE INSIGHTS",
   "warrantyTitle": "OUR PROMISE",
-  "warrantyBody": "Inspector Wiz delivers clear reports, honest guidance, and professional service at every step. Our process is built for accuracy and peace of mind—so you can make confident decisions.",
+  "warrantyBody": "Garage Gators delivers honest guidance and professional service at every step. Our process is built for quality and peace of mind—so you can make confident decisions.",
   "getStartedTitle": "Ready to get started?",
   "getStartedBody": "Contact us for a free onsite estimate within 24 hours.",
   "getStartedCtaUrl": "/contact-us",
@@ -69,6 +69,6 @@
   "review1Author": "Barry Kramer",
   "review2Text": "The team did an amazing job and worked around the rain. Super happy with the results!",
   "review2Author": "Paul Flavion",
-  "review3Text": "Outstanding experience. Inspector Wiz delivered a thorough inspection and clear, photo‑rich report. Professional, detailed, and respectful throughout the visit.",
+  "review3Text": "Outstanding experience. Garage Gators delivered great service and clear communication. Professional, detailed, and respectful throughout the visit.",
   "review3Author": "Michelle Morrison"
 }

@@ -1,8 +1,8 @@
 {
-  "name": "inspector-wiz",
+  "name": "garage-gators",
   "version": "1.0.0",
   "private": true,
-  "description": "Node.js app serving the Inspector Wiz site via Express routes",
+  "description": "Node.js app serving the Garage Gators site via Express routes",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
