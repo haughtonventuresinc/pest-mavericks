@@ -232,14 +232,14 @@ section.blogFeat h4 {
 /* Our Stats icons -> brand orange */
 /* Blog feature cards: yellow cards with brand-red text */
 .blogFeat .featured-posts-wrapper a.feat-post {
-  background: var(--brand-yellow) !important;
+  background: var(--brand-blue) !important;
   border-color: rgba(0,0,0,0) !important;
 }
 .blogFeat .featured-posts-wrapper a.feat-post .entry-summary,
 .blogFeat .featured-posts-wrapper a.feat-post .entry-summary h6,
 .blogFeat .featured-posts-wrapper a.feat-post .entry-summary p,
 .blogFeat .featured-posts-wrapper a.feat-post .entry-title {
-  color: var(--brand-red) !important;
+  color: #ffffff !important;
 }
 .blogFeat .featured-posts-wrapper a.feat-post:hover {
   background: color-mix(in srgb, var(--brand-yellow) 92%, #000 8%) !important;
